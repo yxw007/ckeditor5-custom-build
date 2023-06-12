@@ -1,7 +1,7 @@
 {
 	"name": "pup-ckeditor",
 	"description": "A custom CKEditor 5 build made by the CKEditor 5 online builder.",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"license": "SEE LICENSE IN LICENSE.md",
 	"author": "Potter <aa4790139@gmail.com>",
 	"repository": "https://github.com/yxw007/ckeditor5-custom-build.git",
@@ -33,6 +33,7 @@
 		"@ckeditor/ckeditor5-table": "^32.0.0",
 		"@ckeditor/ckeditor5-theme-lark": "^32.0.0",
 		"@ckeditor/ckeditor5-typing": "^32.0.0",
+		"@ckeditor/ckeditor5-upload": "^33.0.0",
 		"css-loader": "^5.2.7",
 		"postcss": "^7.0.39",
 		"postcss-loader": "^4.3.0",
@@ -45,7 +46,5 @@
 	"keywords": [
 		"ckeditor"
 	],
-	"dependencies": {
-		"@ckeditor/ckeditor5-upload": "^33.0.0"
-	}
+	"dependencies": {}
 }
