@@ -208,10 +208,18 @@
 		function downloadContent() {
 			const content = editor.getData();
 			const template = `
-          <div>
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <title>title</title>
+            <style>
+            </style>
+          </head>
+          <body>
             ${content}
-          </div>
-          `;
+          </body>
+          </html>`;
 			const blob = new Blob([template], {
 				type: "text/plain;charset=utf-8",
 			});
