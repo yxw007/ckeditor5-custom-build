@@ -50,7 +50,7 @@ const config = merge({}, {
 	optimization: {
 		minimizer: [
 			new TerserWebpackPlugin({
-				sourceMap: true,
+				sourceMap: isDev,
 				terserOptions: {
 					output: {
 						// Preserve CKEditor 5 license comments.
