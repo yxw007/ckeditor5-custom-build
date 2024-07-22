@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"outDir": "./dist",
+		"declaration": true,
+		"declarationMap": true,
+		"emitDeclarationOnly": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"strict": true,
+		"allowJs": false,
+		"forceConsistentCasingInFileNames": true,
+		"module": "es6",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": false
+	},
+	"include": [
+		"src/**/*"
+	],
+	"exclude": [
+		"node_modules",
+		"dist"
+	]
+}

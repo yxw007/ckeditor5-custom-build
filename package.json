@@ -1,14 +1,19 @@
 {
 	"name": "pup-ckeditor",
 	"description": "A custom CKEditor 5 build made by the CKEditor 5 online builder.",
-	"version": "0.0.8",
+	"version": "0.0.9",
 	"license": "SEE LICENSE IN LICENSE.md",
 	"author": "Potter <aa4790139@gmail.com>",
 	"repository": "https://github.com/yxw007/ckeditor5-custom-build.git",
 	"main": "./dist/index.js",
 	"scripts": {
 		"dev": "webpack-dev-server --progress",
-		"build": "webpack --mode production"
+		"build:declare": "tsc src/index.js --declaration --emitDeclarationOnly --allowJs --outDir dist",
+		"build": "webpack --mode production && yarn build:declare"
+	},
+	"types": "dist/index.d.ts",
+	"exports": {
+		"require": "./dist/index.js"
 	},
 	"devDependencies": {
 		"@ckeditor/ckeditor5-adapter-ckfinder": "^38.1.1",
@@ -35,6 +40,7 @@
 		"@ckeditor/ckeditor5-theme-lark": "^38.1.1",
 		"@ckeditor/ckeditor5-typing": "^38.1.1",
 		"@ckeditor/ckeditor5-upload": "^38.1.1",
+		"@types/node": "^20.14.11",
 		"clean-webpack-plugin": "^4.0.0",
 		"css-loader": "^5.2.7",
 		"filemanager-webpack-plugin": "^8.0.0",
@@ -44,6 +50,7 @@
 		"raw-loader": "^4.0.2",
 		"style-loader": "^2.0.0",
 		"terser-webpack-plugin": "^4.2.3",
+		"typescript": "^5.5.3",
 		"webpack": "^5.88.2",
 		"webpack-cli": "^4.9.2",
 		"webpack-dev-server": "^4.15.1",

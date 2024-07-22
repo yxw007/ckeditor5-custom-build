@@ -35,7 +35,7 @@ const config = merge({}, {
 	mode: mode,
 	devtool: 'source-map',
 	performance: { hints: false },
-	entry: path.resolve(__dirname, 'src', 'ckeditor.js'),
+	entry: path.resolve(__dirname, 'src', 'index.js'),
 	output: {
 		library: {
 			type: "umd",
