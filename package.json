@@ -13,9 +13,31 @@
 	},
 	"types": "dist/index.d.ts",
 	"exports": {
-		"require": "./dist/index.js"
+		"require": "./dist/index.js",
+		"import": "./dist/index.js"
 	},
 	"devDependencies": {
+		"@types/node": "^20.14.11",
+		"clean-webpack-plugin": "^4.0.0",
+		"css-loader": "^5.2.7",
+		"filemanager-webpack-plugin": "^8.0.0",
+		"html-webpack-plugin": "^5.5.3",
+		"postcss": "^7.0.39",
+		"postcss-loader": "^4.3.0",
+		"raw-loader": "^4.0.2",
+		"style-loader": "^2.0.0",
+		"terser-webpack-plugin": "^4.2.3",
+		"typescript": "^5.5.3",
+		"webpack": "^5.88.2",
+		"webpack-cli": "^4.9.2",
+		"webpack-dev-server": "^4.15.1",
+		"webpack-merge": "^5.9.0"
+	},
+	"keywords": [
+		"ckeditor"
+	],
+	"peerDependencies": {},
+	"dependencies": {
 		"@ckeditor/ckeditor5-adapter-ckfinder": "^38.1.1",
 		"@ckeditor/ckeditor5-autoformat": "^38.1.1",
 		"@ckeditor/ckeditor5-basic-styles": "^38.1.1",
@@ -39,25 +61,6 @@
 		"@ckeditor/ckeditor5-table": "^38.1.1",
 		"@ckeditor/ckeditor5-theme-lark": "^38.1.1",
 		"@ckeditor/ckeditor5-typing": "^38.1.1",
-		"@ckeditor/ckeditor5-upload": "^38.1.1",
-		"@types/node": "^20.14.11",
-		"clean-webpack-plugin": "^4.0.0",
-		"css-loader": "^5.2.7",
-		"filemanager-webpack-plugin": "^8.0.0",
-		"html-webpack-plugin": "^5.5.3",
-		"postcss": "^7.0.39",
-		"postcss-loader": "^4.3.0",
-		"raw-loader": "^4.0.2",
-		"style-loader": "^2.0.0",
-		"terser-webpack-plugin": "^4.2.3",
-		"typescript": "^5.5.3",
-		"webpack": "^5.88.2",
-		"webpack-cli": "^4.9.2",
-		"webpack-dev-server": "^4.15.1",
-		"webpack-merge": "^5.9.0"
-	},
-	"keywords": [
-		"ckeditor"
-	],
-	"dependencies": {}
+		"@ckeditor/ckeditor5-upload": "^38.1.1"
+	}
 }
