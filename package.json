@@ -1,7 +1,7 @@
 {
 	"name": "pup-ckeditor",
 	"description": "A custom CKEditor 5 build made by the CKEditor 5 online builder.",
-	"version": "0.0.9",
+	"version": "0.0.10",
 	"license": "SEE LICENSE IN LICENSE.md",
 	"author": "Potter <aa4790139@gmail.com>",
 	"repository": "https://github.com/yxw007/ckeditor5-custom-build.git",
@@ -9,7 +9,8 @@
 	"scripts": {
 		"dev": "webpack-dev-server --progress",
 		"build:declare": "tsc src/index.js --declaration --emitDeclarationOnly --allowJs --outDir dist",
-		"build": "webpack --mode production && yarn build:declare"
+		"build": "webpack --mode production && yarn build:declare",
+		"release": "npx changelogen --release -i --prerelease"
 	},
 	"types": "dist/index.d.ts",
 	"exports": {
@@ -18,6 +19,7 @@
 	},
 	"devDependencies": {
 		"@types/node": "^20.14.11",
+		"changelogen": "^0.5.5",
 		"clean-webpack-plugin": "^4.0.0",
 		"css-loader": "^5.2.7",
 		"filemanager-webpack-plugin": "^8.0.0",
